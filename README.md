@@ -28,8 +28,8 @@ Here’s what you're required to implement to bring the game to life:
   - When the timer reaches 0, the game ends  
 
 - **Display a message when the game ends**
-  - If the player scores **20 or more points**, show a **winning** message  
-  - If the player scores **less than 20 points**, show a **"try again"** message  
+  - If the player scores **20 or more points** on Easy or Medium, or **25 or more points** on Hard, show a **winning** message
+  - Otherwise, show a **"try again"** message with the goal for the selected difficulty
   - Create one array of possible winning messages and one array of losing messages  
   - Depending on whether the user wins or loses, randomly pick and display a message from the appropriate array  
 
@@ -44,4 +44,3 @@ Here’s what you're required to implement to bring the game to life:
 These are the minimum requirements, but if you'd like an additional challenge go ahead and give the LevelUps a shot! For example, you could add logic to decrease the user's score if they miss a jerry can. Have fun and make the game your own!
 
 If you have any questions or need any assistance with your code, reach out to the HelpHub or attend a Drop-In Hour. You got this!!
-

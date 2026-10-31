@@ -9,7 +9,13 @@
 <body>
   <div class="container">
     <h1>Water Quest</h1>
-    <p class="game-instructions">Collect 20 items to complete the game!</p>
+    <p class="game-instructions">Collect 20 cans to win!</p>
+    <fieldset class="difficulty-picker">
+      <legend>Difficulty</legend>
+      <label><input type="radio" name="difficulty" value="easy"><span>Easy</span></label>
+      <label><input type="radio" name="difficulty" value="medium" checked><span>Medium</span></label>
+      <label><input type="radio" name="difficulty" value="hard"><span>Hard</span></label>
+    </fieldset>
     <div class="stats">
       <p>Cans Collected: <span id="current-cans">0</span></p>
       <p>Time Left: <span id="timer">30</span>s</p>
@@ -20,7 +26,15 @@
       <button id="start-game">Start Game</button>
       <button id="reset-game" type="button">Reset</button>
     </div>
+    <footer class="site-footer">
+      <p>Learn more and help bring clean water to everyone.</p>
+      <nav aria-label="charity: water links">
+        <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">Visit charity: water</a>
+        <a href="https://www.charitywater.org/donate" target="_blank" rel="noopener noreferrer">Donate</a>
+      </nav>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+ 

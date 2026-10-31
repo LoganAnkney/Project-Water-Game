@@ -23,7 +23,7 @@ Fonts:
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Avenir, "Avenir Next", "Proxima Nova", Arial, sans-serif;
   margin: 0;
   padding: 30px;
   background-color: #f0f0f0;
@@ -57,6 +57,55 @@ h1 img {
   font-size: 18px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.difficulty-picker {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.difficulty-picker legend {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.difficulty-picker label {
+  cursor: pointer;
+}
+
+.difficulty-picker input {
+  position: absolute;
+  opacity: 0;
+}
+
+.difficulty-picker span {
+  display: block;
+  min-width: 88px;
+  padding: 9px 16px;
+  border: 2px solid #d5d5d5;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.difficulty-picker input:checked + span {
+  border-color: #159A48;
+  background-color: #e7f5ea;
+}
+
+.difficulty-picker input:focus-visible + span {
+  outline: 3px solid #2E9DF7;
+  outline-offset: 2px;
+}
+
+.difficulty-picker input:disabled + span {
+  cursor: not-allowed;
+  opacity: 0.65;
 }
 
 .stats {
@@ -132,6 +181,15 @@ h1 img {
   filter: sepia(0.7) saturate(1.6) brightness(0.45) contrast(1.1);
 }
 
+.hard-can-1 { filter: hue-rotate(-40deg) saturate(1.8); }
+.hard-can-2 { filter: hue-rotate(-20deg) saturate(1.8); }
+.hard-can-3 { filter: hue-rotate(35deg) saturate(1.8); }
+.hard-can-4 { filter: hue-rotate(80deg) saturate(1.8); }
+.hard-can-5 { filter: hue-rotate(130deg) saturate(1.8); }
+.hard-can-6 { filter: hue-rotate(175deg) saturate(1.8); }
+.hard-can-7 { filter: hue-rotate(225deg) saturate(1.8); }
+.hard-can-8 { filter: hue-rotate(270deg) saturate(1.8); }
+
 @keyframes popUp {
   0% {
     transform: scale(0.5); /* Start scaling from the center */
@@ -154,6 +212,7 @@ button {
   border: none;
   padding: 12px 24px;
   font-size: 16px;
+  font-family: inherit;
   border-radius: 8px;
   cursor: pointer;
   margin: 30px 0 0;
@@ -162,6 +221,30 @@ button {
 
 #reset-game {
   background-color: #2E9DF7;
+}
+
+.site-footer {
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid #e8e8e8;
+  text-align: center;
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0 0 12px;
+}
+
+.site-footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.site-footer a {
+  color: #159A48;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .water-confetti {
